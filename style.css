@@ -1,0 +1,1011 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-overlay: rgb(135, 23, 145);
+    --color-sombra-proyecto: rgb(179, 53, 190);
+}   
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1e2326;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+
+}
+
+/***********************************/
+
+
+/* MENU */
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    
+
+}
+.contenedor-header header nav{
+    margin: auto;
+    
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+    
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    opacity: 40%;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    opacity: 100%;
+
+}
+.nav-responsive{
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    transition: 1s;
+    
+}
+
+
+nav .container ul li.active a{
+    opacity: 100%;
+}
+
+/***********************************/
+
+/* s_inicio */
+.s_inicio {
+    background: url(background_2.png);
+
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.s_inicio #skill-a {
+    color: #0072b1;
+}
+
+.s_inicio .contenido-banner {
+    position: relative;
+    padding: 30px;
+    background-color: #1e2326;
+    width: 260px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+    bottom: 10%;
+
+}
+
+/*Foto De Perfil*/
+.s_inicio .contenido-banner .contenedor-img {
+    margin-top: 40px;
+    border: 2px solid rgb(255, 255, 255);
+    background-image: url(background.gif);
+    background-size: cover;
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin: auto;
+    background-color: white;
+    transition: 0.3s;
+
+}
+
+.s_inicio .contenido-banner .contenedor-img:hover{
+    filter:grayscale(1);
+    transition: 0.5s;
+
+}
+
+/*.s_inicio .contenido-banner .contenedor-img:hover{
+    animation: profile 3s infinite;
+
+}*/
+
+.s_inicio .contenido-banner h1 {
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+.s_inicio .contenido-banner h2 {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.s_inicio .contenido-banner .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 0px;
+    font-size: 20px;
+    transition: .3s;
+
+}
+
+.s_inicio .redes a i {
+    color: #fff;
+}
+
+.s_inicio .contenido-banner .redes .discord:hover {
+    background-color: #7289da;
+    animation: tilt-shaking 0.25s infinite;
+}
+
+.s_inicio .contenido-banner .redes .instagram:hover {
+    background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+    animation: tilt-shaking 0.25s infinite;
+}
+
+.s_inicio .contenido-banner .redes .linkedin:hover {
+    background: #0072b1;
+    animation: tilt-shaking 0.25s infinite;
+}
+
+.s_inicio .contenido-banner .redes .steam:hover {
+    background: #2a475e;
+    animation: tilt-shaking 1s infinite;
+}
+
+/***********************************/
+
+
+/*Sobre Mi*/
+
+.s_sobremi {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.s_sobremi .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.s_sobremi h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    letter-spacing: 3px;
+
+
+}
+
+.s_sobremi h2 span {
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(190, 53, 53);
+
+}
+
+.s_sobremi .contenido-seccion p {
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    
+
+}
+
+.s_sobremi .contenido-seccion p span {
+    color: rgb(190, 53, 53);
+    font-weight: bold;
+}
+
+
+
+.s_sobremi .fila {
+    display: flex;
+}
+
+.s_sobremi .fila .col {
+    width: 50%;
+}
+
+.s_sobremi .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+
+}
+
+
+
+.s_sobremi .fila .col ul {
+    list-style: none;
+}
+
+.s_sobremi .fila .col ul li {
+    margin: 12px 0;
+}
+
+.s_sobremi .fila .col ul li strong {
+    display: inline-block;
+    color: rgb(190, 53, 53);
+    width: 130px;
+}
+
+.s_sobremi .fila .col ul li span {
+    background-color: rgb(190, 53, 53);
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.s_sobremi .fila .col .contenedor-intereses {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.card {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 3px;
+    transform-style: preserve-3d;
+
+}
+
+.card .face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 0.5s ease-in-out;
+    transform: perspective(500px) rotateY(0deg);
+
+
+
+}
+
+.col .contenedor-intereses .card .face.back h2 {
+    font-size: 20px;
+}
+
+.card .face.front {
+    background-color: #252A2E;
+    color: white;
+
+}
+
+.card:hover .face.front {
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card .face.back {
+    background-color: rgb(190, 53, 53);
+    color: white;
+    font-family: 'Segoe UI';
+    letter-spacing: 1 px;
+    transform: perspective(500px) rotateY(180deg);
+
+
+}
+
+.card:hover .face.back {
+    transform: perspective(500px) rotateY(360deg);
+}
+
+
+.s_sobremi .contenido-seccion .col .contenedor-intereses .card .face.back #hardware{
+    font-size: 13px;
+}
+.s_sobremi .contenido-seccion .col .contenedor-intereses .card .face.back #musica{
+    font-size: 13px;
+}
+
+.s_sobremi button {
+    position: relative;
+    grid-gap: 8px;
+    align-items: center;
+    background: 0 0;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    flex-shrink: 0;
+    font-size: 16px;
+    gap: 8px;
+    line-height: 1.5;
+    overflow: hidden;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all .14s ease-out;
+    white-space: nowrap;
+    color: #fff;
+    z-index: 10;
+    margin: 30px auto;
+
+
+
+}
+
+.s_sobremi button:hover {
+    box-shadow: 4px 4px 0 #ffffff;
+    transform: translate(-4px, -4px);
+
+}
+
+.s_sobremi button:focus-visible {
+    outline-offset: 1px;
+}
+
+/***********************************/
+
+
+/* s_skills */
+.s_skills {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 80px 20px;
+}
+
+.s_skills .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.s_skills h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    letter-spacing: 4px;
+
+}
+
+.s_skills .fila {
+    display: flex;
+
+}
+
+.s_skills .fila .col {
+    width: 50%;
+    padding: 0 20px;
+
+}
+
+.s_skills .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 5px;
+
+}
+
+.s_skills .skill > span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.s_skills .skill .barra-skill {
+    height: 8px;
+    width: 80%;
+    background-color: #13151733;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 100px;
+}
+
+.s_skills .skill .progreso {
+    background-color: rgb(187, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    border-radius: 100px;
+
+}
+
+.s_skills .fila .col .skill span i {
+    color: #fff;
+}
+
+.s_skills .skill .python {
+    width: 0%;
+    animation: 2s python forwards;
+}
+
+.s_skills .skill .redes {
+    width: 0%;
+    animation: 2s redes forwards;
+}
+
+.s_skills .skill .javascript {
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+
+.s_skills .skill .ciberseguridad {
+    width: 0%;
+    animation: 2s ciberseguridad forwards;
+}
+
+.s_skills .skill .html {
+    width: 0%;
+    animation: 2s html forwards;
+}
+
+.s_skills .skill .css {
+    width: 0%;
+    animation: 2s css forwards;
+}
+
+.s_skills .skill .linux {
+    width: 0%;
+    animation: 2s linux forwards;
+}
+
+.s_skills .skill .trabajo-equipo {
+    width: 0%;
+    animation: 2s trabajo-equipo forwards;
+}
+
+.s_skills .skill .atencion-cliente {
+    width: 0%;
+    animation: 2s atencion-cliente forwards;
+}
+
+.s_skills .skill .creatividad {
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+
+.s_skills .skill .dedicacion {
+    width: 0%;
+    animation: 2s dedicacion forwards;
+}
+
+.s_skills .skill .iniciativa {
+    width: 0%;
+    animation: 2s iniciativa forwards;
+}
+
+.s_skills .skill .responsabilidad {
+    width: 0%;
+    animation: 2s responsabilidad forwards;
+}
+
+.s_skills .skill .planificacion {
+    width: 0%;
+    animation: 2s planificacion forwards;
+
+}
+
+.s_skills .skill .liderazgo {
+    width: 0%;
+    animation: 2s planificacion forwards;
+
+}
+
+.s_skills .skill .ingles {
+    width: 0%;
+    animation: 2s ingles forwards;
+
+}
+
+
+/* Portafolio */
+.s_portafolio{
+    background-color: #1e2326;
+    color: #000000;
+    padding: 50px 20px;
+}
+
+.s_portafolio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.s_portafolio h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.s_portafolio .proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.s_portafolio .proyectos .proyecto{
+    position:relative;
+    width: 320px;
+    height: 320px;
+    margin: 2%;
+    cursor: pointer;
+    background-color: #272c30;
+    border-width: 2px;
+    box-shadow: var(--color-sombra-proyecto) 0px 7px 15px 5px;    
+    border-radius: 10px;
+    border-color: var(--color-sombra-proyecto);
+    border-style: solid;
+    border-radius: 10px;
+    
+
+
+}
+
+
+.s_portafolio .proyectos .proyecto-apagado{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 2%;
+    box-shadow: rgb(190, 53, 53) 0px 7px 15px 5px;    border-radius: 10px;
+    border-color: rgb(190, 53, 53);
+    cursor: pointer;
+    background-color: #272c30;
+    border-radius: 10px;
+    opacity: 20%;
+    transition: 1s;
+
+}
+
+.s_portafolio .proyectos .proyecto-apagado:hover{
+    animation: tilt-shaking 1s normal ;
+}
+
+
+.s_portafolio .proyectos .proyecto-apagado .container-img-apagado{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    top: 35%;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: invert();
+}
+
+.s_portafolio .proyectos .proyecto .container-img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    top: 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: invert();
+}
+
+
+.s_portafolio .proyectos .proyecto .overlay{
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #acabb0;
+    background-image: linear-gradient(315deg, var(--color-overlay) 0%, var(--color-overlay) 74%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s;
+    font-size: 18px;
+    letter-spacing: 1px;
+    opacity: 0;
+    border-radius: 6px;
+
+}
+
+.s_portafolio .proyectos .proyecto .overlay .tecnologias{
+    position: absolute;
+    display: block;
+    margin-top: 300px;
+    left: 35%;
+    transition: 1s;
+    width: 100px;
+    color: #ffffff;
+
+}
+
+.s_portafolio .proyectos .proyecto .overlay h3{
+    font-size: 14px;
+    margin-left: 100px;
+    transition: 1s;
+    color: #ffffff;
+}
+
+.s_portafolio .proyectos .proyecto .overlay p{
+    font-size: 13px;
+    margin-right: 100px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    transition: 1s;
+    color: #ffffff;
+
+}
+
+.s_portafolio .contenido-seccion .proyectos .proyecto .overlay a{
+    text-decoration: none;
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 20px;
+    font-size: 13px;
+    transition: 1s;
+    opacity: 50%;
+    
+}
+
+.s_portafolio .proyectos .proyecto .overlay:hover{
+    opacity: 1;
+}
+
+.s_portafolio .proyectos .proyecto .overlay:hover h3{
+    margin-left: 0px;
+}
+
+.s_portafolio .proyectos .proyecto .overlay:hover a{
+    margin-top: 20px;
+    
+}
+
+.s_portafolio .proyectos .proyecto .overlay a:hover{
+    opacity: 100%;
+
+}
+
+.s_portafolio .proyectos .proyecto .overlay:hover p{
+    margin-right: 0px;
+}
+
+
+.s_portafolio .proyectos .proyecto .overlay:hover .tecnologias{
+    margin-top: 280px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/***********************************/
+
+
+@keyframes python {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes redes {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 36%;
+    }
+}
+
+@keyframes ciberseguridad {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 35%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 35%;
+    }
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 55%;
+    }
+}
+
+@keyframes linux {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes trabajo-equipo {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes atencion-cliente {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes creatividad {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes dedicacion {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes iniciativa {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes responsabilidad {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes planificacion {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes liderazgo {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes ingles {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(5px, 5px) rotate(5deg);
+    }
+
+    50% {
+        transform: translate(0, 0) rotate(0eg);
+    }
+
+    75% {
+        transform: translate(-5px, 5px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+@keyframes tilt-shaking {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(0eg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    
+    nav{
+        display: none;
+    }
+
+
+
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 59px;
+        background-color: #1e2326;
+        width: 190px;
+
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 2px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+
+
+    .s_sobremi .fila{
+        display: block;
+    }
+    .s_sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .s_skills .fila{
+        display: block;
+    }
+    .s_skills .fila .col{
+        width: 100%;
+    }
+    .s_skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .s_portfolio .proyectos{
+        display: block;
+        width: 100%;
+    }
+    .s_portfolio .proyectos .proyecto{
+        max-width: 100%;
+    }
+    .s_portfolio .proyectos .proyecto img{
+        width: 100%;
+    }
+
+}
+@media screen and (max-height:700px){
+
+    .s_inicio .contenido-banner{
+        margin-bottom: 70px;
+    }
+}

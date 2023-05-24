@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+
+
+
+    <title>Portafolio Digital</title>
+</head>
+
+<body>
+    <!-- MENU-->
+    <div class="contenedor-header">
+        <header>
+            <nav id="nav">
+                <div class="container">
+                    <ul>
+                        <li class="inicio active"><a href="#inicio" onclick="seleccionar()">Inicio <i
+                                    class="fa-solid fa-house"></i></a></li>
+                        <li class="sobremi"><a href="#sobremi" onclick="seleccionar()">Sobre Mi <i
+                                    class="fa-solid fa-user"></i></a></li>
+                        <li class="skills"><a href="#skills" onclick="seleccionar()">Skills <i
+                                    class="fa-solid fa-shield-halved"></i></a></li>
+                        <li class="portafolio"><a href="#portafolio" onclick="seleccionar()">Portafolio <i
+                                    class="fa-solid fa-folder"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="nav-responsive">
+                <i class="fa-solid fa-bars" onclick="mostrarOcultarMenu()"></i>
+
+            </div>
+        </header>
+    </div>
+    <!-- INICIO -->
+    <section id="inicio" class="s_inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img"></div>
+            <h1>Joel Bermúdez</h1>
+            <h2>Developer </h2>
+
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/joel-berm%C3%BAdez-399b34216/" target="_blank" class="linkedin"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/_col0rbl1nd_/" target="_blank" class="instagram"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://discordapp.com/users/456268385731346473" class="discord" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://steamcommunity.com/id/kh1fvbhgedkhk/" class="steam" target="_blank"><i class="fa-brands fa-steam"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobremi" class="s_sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre <span>Mi</span> </h2>
+            <div
+                style="width: 300px;height: 5px;background-color: rgb(190, 53, 53);margin: 10px auto;display: flex;z-index: 1;position: relative;bottom: 15px;border-radius: 2px;">
+            </div>
+            <p><span>Hola, Soy Joel Bermúdez.</span> un apasionado de la tecnología y en
+                particular de la programación y la ciberseguridad.
+                Me desempeño como programador Backend, lo que significa que <span>mi trabajo se enfoca en el desarrollo
+                    de la
+                    lógica y funcionalidad de aplicaciones.</span> Desde que descubrí el mundo de la programación, he
+                estado
+                fascinado por su capacidad para crear soluciones innovadoras y eficientes.
+            </p>
+            <p>
+                Aunque no cuento con experiencia laboral en el sector, <span> estoy muy interesado en comenzar mi
+                    carrera como desarrollador</span> y aplicar los conocimientos y
+                habilidades que he adquirido a lo largo de mi formación académica y personal. Estoy dispuesto a aprender
+                y a esforzarme al máximo <span> para crecer profesionalmente en el campo de la informática.</span> Creo
+                que puedo aportar una gran motivación y
+                entusiasmo a un equipo de trabajo, y estoy seguro de que puedo desempeñarme con éxito en el ámbito
+                laboral.
+            </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            30-05-2005
+                        </li>
+                        <li style="font-size: 15px;">
+                            <strong>Gmail</strong>
+                            joelbermudez946@gmail.com
+                        </li>
+                        <li>
+                            <strong>Seniority</strong>
+                            Junior
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>DEVELOPER</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="card">
+                            <div class="face front">
+                                <i class="fa-solid fa-gamepad fa-2xl"></i>
+                            </div>
+                            <div class="face back">
+                                <h2>Jugar</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="face front">
+                                <i class="fa-solid fa-headphones fa-2xl"></i>
+                            </div>
+                            <div class="face back">
+                                <h2 id="musica">Música</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="face front">
+                                <i class="fa-brands fa-linux fa-2xl"></i>
+                            </div>
+                            <div class="face back">
+                                <h2>Linux</h2>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="face front">
+                                <i class="fa-solid fa-dumbbell fa-2xl"></i>
+                            </div>
+                            <div class="face back">
+                                <h2>Gym</h2>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="face front">
+                                <i class="fa-sharp fa-solid fa-mug-saucer fa-2xl"></i>
+                            </div>
+                            <div class="face back">
+                                <h2>Café</h2>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="face front">
+                                <i class="fa-solid fa-microchip fa-2xl"></i>
+                            </div>
+                            <div class="face back">
+                                <h2 id="hardware">Hardware</h2>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!--Skills-->
+    <section id="skills" class="s_skills">
+        <div class="contenido-seccion">
+            <h2>Skills <i class="fa-solid fa-shield-halved"></i></h2>
+            <div class="fila">
+                <!-- Habilidades Tecnicas-->
+                <div class="col">
+                    <h3>Technical Skills <i class="fa-solid fa-laptop"></i></h3>
+                    <div class="skill">
+                        <span>Python <i class="fa-brands fa-python"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso python"> </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Redes <i class="fa-sharp fa-solid fa-network-wired"></i> </span>
+                        <div class="barra-skill">
+                            <div class="progreso redes"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ciberseguridad <i class="fa-solid fa-shield"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso ciberseguridad">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript <i class="fa-brands fa-js"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Html <i class="fa-brands fa-html5"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso html">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Css <i class="fa-brands fa-css3-alt"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso css">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Linux <i class="fa-brands fa-linux"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso linux">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidades Profesionales-->
+
+                <div class="col">
+                    <h3>Job Skills <i class="fa-solid fa-pen-nib"></i></h3>
+                    <div class="skill">
+                        <span>Ingles <i class="fa-solid fa-graduation-cap"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso ingles">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo <i class="fa-solid fa-people-group"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajo-equipo">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Atención al Cliente <i class="fa-solid fa-handshake-angle"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso atencion-cliente">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad <i class="fa-solid fa-pencil"></i> </span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación <i class="fa-sharp fa-solid fa-clock"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Iniciativa <i class="fa-solid fa-hand"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso iniciativa">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Responsabilidad <i class="fa-solid fa-eye"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso responsabilidad">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Planificación <i class="fa-solid fa-list-check"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso planificacion">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Liderazgo <i class="fa-solid fa-person-rays"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso liderazgo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Portafolio-->
+    <section id="portafolio" class="s_portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="proyectos">
+                <div class="proyecto">
+                    <div class="container-img" style="background-image: url(icon_2.png);"></div>
+                    <div class="overlay">
+                        <h3>Identificador de Dispositivos</h3>
+                        <p>Python3 Nmap</p>
+                        <a href="https://github.com/j0elbz/w0rss.git">VER</a>
+                        <div class="tecnologias">
+                            <i class="fa-brands fa-python"></i>
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="container-img" style="background-image: url(organizador_2.png);"></div>
+                    <div class="overlay">
+                        <h3>Organizador de Archivos</h3>
+                        <p>Python3 Tkinter</p>
+                        <a href="https://github.com/j0elbz/python3-organizador.git">VER</a>
+                        <div class="tecnologias">
+                            <i class="fa-brands fa-python"></i>
+                            <i class="fa-solid fa-feather"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="container-img" style="background-image: url(user_organizador.png);"></div>
+                    <div class="overlay">
+                        <h3 style="font-size: 15px;">Gestor de Usuarios GUI</h3>
+                        <p style="font-size: 11px;">Python3 Tkinter SQLite3</p>
+                        <a href="https://github.com/j0elbz/Gestor-de-Usuarios-Python3">VER</a>
+                        <div class="tecnologias">
+                            <i class="fa-brands fa-python"></i>
+                            <i class="fa-solid fa-feather"></i>
+                            <i class="fa-solid fa-database"></i>
+                            <i class="fa-sharp fa-solid fa-terminal"></i>                       
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto-apagado">
+                    <div class="container-img-apagado" style="background-image: url(White_lock.png);" alt=""></div>
+                </div>
+                <div class="proyecto-apagado">
+                    <div class="container-img-apagado" style="background-image: url(White_lock.png);" alt=""></div>
+                </div>
+                <div class="proyecto-apagado">
+                    <div class="container-img-apagado" style="background-image: url(White_lock.png);" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
